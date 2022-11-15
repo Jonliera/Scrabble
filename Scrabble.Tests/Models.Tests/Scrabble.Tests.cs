@@ -17,5 +17,16 @@ namespace Scrabble.Tests
       // Assert
       Assert.AreEqual(typeof(string), newGame.scrabbleWord.GetType());
     }
+
+    [TestMethod]
+    public void ScrabbleGame_CreatesArrayFromString_Array()
+    {
+      // Arrange
+      string testString = "hey";
+      ScrabbleGame newGame = new ScrabbleGame(testString);
+      // Act
+      array result = newGame.StringtoChar;
+      // Assert
+    }
   }
 }
