@@ -19,14 +19,15 @@ namespace Scrabble.Tests
     }
 
     [TestMethod]
-    public void ScrabbleGame_CreatesArrayFromString_Array()
+    public void ScrabbleGame_ReturnPointsFromString_Int()
     {
       // Arrange
-      string testString = "hey";
+      int num = 1;
+      string testString = "U";
       ScrabbleGame newGame = new ScrabbleGame(testString);
       // Act
-      array result = newGame.StringtoChar;
       // Assert
+      Assert.AreEqual(num, newGame.Total());
     }
   }
 }
